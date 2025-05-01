@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
+    <title>Item Search</title>
+    <link rel="stylesheet" href="itemIds.css" />
+  </head>
+  <body>
+    <nav id="top-left-nav">
+      <ul>
+        <li>
+          <a href="https://github.com/faiz-n-shk" target="_blank">
+            <span class="circle-icon">
+              <img src="./icons/github.svg" alt="GitHub" />
+            </span>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/faiz_n_shk/" target="_blank">
+            <span class="circle-icon">
+              <img src="./icons/instagram.svg" alt="Instagram" />
+            </span>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@FaxKun" target="_blank">
+            <span class="circle-icon">
+              <img src="./icons/youtube.svg" alt="YouTube" />
+            </span>
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://discordapp.com/users/887314430101192724"
+            target="_blank"
+          >
+            <span class="circle-icon">
+              <img src="./icons/discord.svg" alt="Discord" />
+            </span>
+            My Discord - @Fayz
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.gg/bPkDwRFWrE" target="_blank">
+            <span class="circle-icon">
+              <img src="./icons/discord.svg" alt="Discord" />
+            </span>
+            ReCycle Project Server
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Item Search</h1>
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search items by name or ID..."
+        oninput="filterItems()"
+      />
+      <div id="itemsContainer" class="items-container"></div>
+    </div>
+    <script src="itemIds.js"></script>
+    <script>
+      //ensures items are displayed when page is loaded
+      displayItems(items);
+    </script>
+  </body>
+</html>
