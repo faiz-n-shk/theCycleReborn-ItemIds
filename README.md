@@ -1,11 +1,15 @@
 # theCycleReborn-ItemIds
 item id's for most stuff in the cycle reborn, to add it into the mongoDb inventory document
 
-# Current progress
+# Current progress:
 images for the items are yet to be added,
 its a lengthy process to add images manually for all items, so do not keep expectations pls :)
 
-credits to members of ReCycle Project community to provide much needed data, thx a lot
+# Credits:
+credits to members of ReCycle Project community to provide much needed data, thx a lot, and @MONKES_On_Twitch for the tutorial,
+link to @MONKES_On_Twitch's [Youtube Channel](https://www.youtube.com/@monkes_on_twitch/featured)
+- The tutorial is present in the [WebPage](https://faiz-n-shk.github.io/theCycleReborn-ItemIds/)
+
 
 
 # Guide to Modifying Stats and Inventory in MongoDB
