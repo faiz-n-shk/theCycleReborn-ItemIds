@@ -1,6 +1,8 @@
 body {
   font-family: "Arial", sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
+  background: url("./bgImg/webpageBgImg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -48,6 +50,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: grey; /* Default grey background */
 }
 
 .item-tile img {
@@ -114,6 +117,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: bold; /* Make text bolder */
 }
 
 .circle-icon {
@@ -128,6 +132,9 @@ h1 {
   color: #fff;
   overflow: hidden;
   position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth with shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 .circle-icon img,
@@ -145,10 +152,30 @@ h1 {
 .circle-icon:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+#top-right-credits {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.5); /* Add background for better readability */
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  body {
+    background-size: 250%;
+    background-position: center;
+  }
+
   #top-left-nav ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -164,5 +191,12 @@ h1 {
     height: 30px;
     line-height: 30px;
     font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 400%;
+    background-position: center;
   }
 }

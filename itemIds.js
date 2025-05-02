@@ -16,7 +16,13 @@ function displayItems(filteredItems) {
   filteredItems.forEach((item) => {
     const tile = document.createElement("div");
     tile.className = "item-tile";
-    tile.style.backgroundImage = `url(${item.bgImg || "placeholder.png"})`;
+    if (item.bgImg) {
+      tile.style.backgroundImage = `url(${item.bgImg})`;
+      tile.style.backgroundColor = "transparent"; // Remove grey background
+    } else {
+      tile.style.backgroundImage = "none";
+      tile.style.backgroundColor = "grey"; // Default grey background
+    }
     tile.innerHTML = `
       <h3>${item.displayName}</h3>
       <button onclick='copyItem(${JSON.stringify(
@@ -46,9 +52,9 @@ function searchItems(items, query) {
 
 // exclude displayName, bgImg, and tags fields from the copied object from the JSON file and copy the rest of the fields to the clipboard as JSON
 function copyItem(item, button) {
-  const { displayName, bgImg, tags, ...itemToCopy } = item;
+  const { displayName, tags, bgImg, ...filteredItem } = item;
   navigator.clipboard
-    .writeText(JSON.stringify(itemToCopy, null, 2))
+    .writeText(JSON.stringify(filteredItem))
     .then(() => {
       button.textContent = "Copied!";
       setTimeout(() => (button.textContent = "Copy JSON"), 2000);
