@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google" content="notranslate" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Item Search</title>
+    <meta
+      name="description"
+      content="CycleReborn Item ID List - A comprehensive list of item IDs for CycleReborn. Search and explore game items easily."
+    />
+    <meta
+      name="keywords"
+      content="CycleReborn, Item ID List, Game Items, Cycle Reborn Project, Inventory, Search Items, Cycle Reborn Item IDs"
+    />
+    <meta name="author" content="Faizan (@Fayz212)" />
+    <meta property="og:title" content="CycleReborn Item ID List" />
+    <meta
+      property="og:description"
+      content="A comprehensive list of item IDs for CycleReborn. Search and explore game items easily."
+    />
+    <meta property="og:image" content="./icons/mikeyCircleIcon.png" />
+    <meta
+      property="og:url"
+      content="https://faiz-n-shk.github.io/theCycleReborn-ItemIds/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CycleReborn Item ID List" />
+    <meta
+      name="twitter:description"
+      content="A comprehensive list of item IDs for CycleReborn. Search and explore game items easily."
+    />
+    <meta name="twitter:image" content="./icons/mikeyCircleIcon.png" />
+    <title>CycleReborn Item ID List</title>
+    <link rel="icon" href="./icons/mikeyCircleIcon.png" type="image/png" />
     <link rel="stylesheet" href="itemIds.css" />
   </head>
   <body>
     <nav id="top-left-nav">
       <ul>
+        <li>
+          <span class="created-by">Created by - @Fayz212, Socials:</span>
+        </li>
         <li>
           <a href="https://github.com/faiz-n-shk" target="_blank">
             <span class="circle-icon">
@@ -49,22 +79,37 @@
         <li>
           <a href="https://discord.gg/bPkDwRFWrE" target="_blank">
             <span class="circle-icon">
-              <img src="./icons/discord.svg" alt="Discord" />
+              <img src="./icons/reCycle.webp" alt="ReCycle Project Server" />
             </span>
             ReCycle Project Server
           </a>
         </li>
+        <li>
+          <a
+            href="https://github.com/faiz-n-shk/theCycleReborn-ItemIds"
+            target="_blank"
+          >
+            <span class="circle-icon">
+              <img src="./icons/readMe.svg" alt="Repo/README.md" />
+            </span>
+            Repo/README.md
+          </a>
+        </li>
       </ul>
     </nav>
-    <div id="top-right-credits">
-      Webpage created by - @Fayz212
-      <br />
-      <a
-        href="https://github.com/faiz-n-shk/theCycleReborn-ItemIds"
-        target="_blank"
-      >
-        Mentioned in the README.md file.</a
-      >
+    <div style="margin-top: 20px" class="video-container">
+      <div class="video-wrapper">
+        <label for="videoSelect">Watch the Tutorial:</label>
+        <iframe
+          src="https://www.youtube.com/embed/w5v0wWvBE3o"
+          title="MongoDB Inventory Change Tutorial"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          width="360"
+          height="203"
+        ></iframe>
+      </div>
     </div>
     <div class="container">
       <h1>Item Search</h1>
@@ -77,9 +122,5 @@
       <div id="itemsContainer" class="items-container"></div>
     </div>
     <script src="itemIds.js"></script>
-    <script>
-      //ensures items are displayed when page is loaded
-      displayItems(items);
-    </script>
   </body>
 </html>
